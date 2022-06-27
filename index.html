@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- favicon -->
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+
+		<title>Ping coming soon page</title>
+	</head>
+	<body>
+		<!-- header -->
+		<header class="wrapper">
+			<img src="images/logo.svg" alt="Ping" />
+		</header>
+
+		<!-- main -->
+		<main class="wrapper">
+			<!-- i used spacing class to make the word look like the design by using letter-spacing -->
+			<h1><span class="spacing">We</span> are launching <b>soon!</b></h1>
+			<p>Subscribe and get notified</p>
+			<form novalidate>
+				<input type="email" placeholder="Your email address..." id="email" />
+				<div class="errortext"></div>
+				<button type="submit">Notify Me</button>
+			</form>
+			<img src="images/illustration-dashboard.png" alt="ping dashboard" />
+		</main>
+
+		<!-- footer -->
+		<footer class="wrapper">
+			<div class="social-links">
+				<a href="#"><i class="fa-brands fa-facebook-f" aria-label="Facebook ping page"></i></a>
+				<a href="#"><i class="fa-brands fa-twitter" aria-label="Twitter ping account"></i></a>
+				<a href="#"><i class="fa-brands fa-instagram" aria-label="instagram ping account"></i></a>
+			</div>
+			<p>&copy; Copyright Ping. All rights reserved.</p>
+		</footer>
+		<script src="js/script.js"></script>
+	</body>
+</html>

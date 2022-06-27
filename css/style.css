@@ -1,0 +1,293 @@
+/* Reset and Base styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	font-family: "Libre Franklin", sans-serif;
+}
+
+img {
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+}
+
+.wrapper {
+	max-width: 745px;
+	margin: auto;
+	padding-left: 50px;
+	padding-right: 50px;
+	text-align: center;
+}
+
+/* header */
+header {
+	padding-top: 86px;
+}
+
+header img {
+	margin-bottom: 44px;
+}
+
+/* main */
+main h1 {
+	margin-bottom: 16.5px;
+	font-size: 48px;
+	font-weight: 300;
+	color: #969696;
+}
+
+h1 .spacing {
+	letter-spacing: 1.75px;
+}
+
+h1 b {
+	color: #151f29;
+}
+
+main p {
+	margin-bottom: 40px;
+	font-size: 20px;
+	font-weight: 400;
+	color: #13181b;
+}
+
+main form {
+	display: flex;
+	position: relative;
+	margin-bottom: 85px;
+	padding: 0 4px;
+}
+
+form #email {
+	flex: 1;
+	margin-right: 17.5px;
+	padding: 0 32px;
+	border: 0.25px solid #c1c6d2;
+	border-radius: 30px;
+	outline-color: #cfd3e3;
+	outline-width: 0.5px;
+	transition: 200ms margin-bottom ease-in-out;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: inherit;
+}
+
+form #email::placeholder {
+	font-weight: 300;
+	color: #cfd3e3;
+}
+
+form button {
+	width: 200px;
+	padding: 18px 0;
+	border: none;
+	border-radius: 30px;
+	transition: 200ms background-color ease-in-out;
+	font-size: 16px;
+	font-weight: 500;
+	font-family: inherit;
+	color: #ffffff;
+	background-color: #4f7df3;
+	box-shadow: #b5c5f1 0px 5px 12px;
+	cursor: pointer;
+}
+
+form button:hover {
+	background-color: #7195f5;
+}
+
+form.error #email {
+	border-color: hsla(354, 100%, 66%, 0.65);
+	outline-color: hsla(354, 100%, 66%, 0.65);
+}
+
+form .errortext {
+	position: absolute;
+	bottom: -20px;
+	left: 40px;
+	color: hsla(354, 100%, 66%, 0.85);
+	font-size: 15px;
+	font-style: italic;
+}
+
+main img {
+	margin-bottom: 65px;
+}
+
+/* footer */
+footer {
+	padding-bottom: 45px;
+}
+
+footer .social-links {
+	margin-bottom: 25px;
+}
+
+.social-links a {
+	display: inline-block;
+	margin-right: 10px;
+	text-decoration: none;
+}
+
+.social-links i {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 16px;
+	height: 18px;
+	padding: 15px;
+	border: 1px solid #dee0e6;
+	border-radius: 50%;
+	transition: 200ms background-color ease-in-out, 200ms color ease-in-out;
+	font-size: 15px;
+	color: #4d83ef;
+}
+
+.social-links a:hover i {
+	background-color: #4e82f4;
+}
+
+.social-links a:hover i {
+	color: #ffffff;
+}
+
+footer p {
+	font-size: 12px;
+	color: #bcbdc0;
+}
+
+/* Meida queries (Responsive) */
+@media screen and (max-width: 765px) {
+	/* Base styles */
+	.wrapper {
+		max-width: 100%;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	/* header */
+	header {
+		padding-top: 160px;
+	}
+
+	header img {
+		width: 110px;
+		margin-bottom: 85px;
+	}
+
+	/* main */
+	main h1 {
+		margin-bottom: 40px;
+		font-size: 40px;
+	}
+
+	main p {
+		margin-bottom: 60px;
+		font-size: 25px;
+	}
+
+	main form {
+		flex-direction: column;
+		padding: 0;
+	}
+
+	form #email {
+		margin-right: 0;
+		margin-bottom: 20px;
+		padding: 20px 50px;
+		border-radius: 50px;
+		font-size: 22px;
+	}
+
+	form button {
+		width: 100%;
+		padding: 20px 10px;
+		border-radius: 50px;
+		font-size: 22px;
+	}
+
+	form.error #email {
+		margin-bottom: 60px;
+	}
+
+	form .errortext {
+		bottom: 100px;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: 15px;
+		width: 100%;
+	}
+
+	/* footer */
+	.social-links i {
+		width: 31px;
+		height: 31px;
+		padding: 20px;
+		font-size: 22px;
+	}
+
+	footer p {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	/* Base styles */
+	.wrapper {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	/* header  */
+	header {
+		padding-top: 100px;
+	}
+
+	header img {
+		width: 80px;
+		margin-bottom: 50px;
+	}
+
+	/* main */
+	main h1 {
+		margin-bottom: 25px;
+		font-size: calc(20px + 1.5vw);
+	}
+
+	main p {
+		font-size: 18.5px;
+		margin-bottom: 45px;
+	}
+
+	main form {
+		margin-bottom: 55px;
+		padding: 0 15px;
+	}
+
+	form #email {
+		padding: 15px 20px;
+		font-size: 17px;
+	}
+
+	form button {
+		font-size: 16px;
+	}
+	
+	form .errortext {
+		font-size: 12px;
+	}
+
+	/* footer */
+	footer p {
+		font-size: 16px;
+	}
+}
