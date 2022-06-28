@@ -25,7 +25,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github repo](https://github.com/ahmedAgawad/ping-cooming-soon-page-FEM)
-- Live Site URL: [Live Site](ping-coming-soon-website.netlify.app)
+- Live Site URL: [Live Site](https://ping-coming-soon-website.netlify.app/)
 
 ## My process
 
